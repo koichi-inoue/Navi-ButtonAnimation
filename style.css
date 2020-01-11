@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+#container {
+  width: 70%;
+  max-width: 640px;
+  margin: 2rem auto;
+  background: #EEE;
+  overflow: hidden;
+}
+
+header {
+  position: relative;
+  background-color: #333;
+  height: 6rem;
+  box-shadow: 0 4px 0.3125rem rgba(0,0,0,.3);
+}
+
+h1 {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  font-size: 1.25rem;
+  color: white;
+}
+
+.menu {
+  width: 100%;
+}
+
+.menu-button {
+  position: absolute;
+  top: 2.25rem;
+  right: 2rem;
+  z-index: 999;
+}
+
+.menu-button-line {
+  position: relative;
+  display: block;
+  height: 2px;
+  width: 30px;
+  background: #BBB;
+  transition: ease .5s;
+}
+
+.menu-button-line:nth-child(1) { top: 0; }
+.menu-button-line:nth-child(2) { margin: 8px 0; }
+.menu-button-line:nth-child(3) { top: 0; }
+
+.menu-button.isOpen .menu-button-line:nth-child(1) {
+  top: 10px;
+  transform: rotate(135deg);
+}
+
+.menu-button.isOpen .menu-button-line:nth-child(2) {
+  transform: translateY(-50%);
+  opacity: 0;
+}
+
+.menu-button.isOpen .menu-button-line:nth-child(3) {
+  top: -10px;
+  transform: rotate(-135deg);
+}
+
+.menu-list {
+  position: absolute;
+  top: 6rem;
+  left: 0;
+  width: 100%;
+  background-color: rgba(64,64,64,.7);
+  box-shadow: 0 4px 0.3125rem rgba(0,0,0,.3);
+}
+
+.menu-list li {
+  height: 3rem;
+  border-bottom: solid 1px #AAA;
+}
+
+.menu-list a {
+  display: block;
+  padding: 0.75rem;
+  text-align: center;
+  color: #FFF;
+}
+
+.menu-list a:hover {
+  background-color: #333;
+}
+
+main {
+  padding: 3rem;
+}
+
+main p {
+  text-align: justify;
+  color: #555;
+}
+
+footer {
+  background-color: #333;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: white;
+}
