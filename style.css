@@ -28,18 +28,14 @@ h1 {
   color: white;
 }
 
-.menu {
-  width: 100%;
-}
-
-.menu-button {
+.navButton {
   position: absolute;
   top: 2.25rem;
   right: 2rem;
   z-index: 999;
 }
 
-.menu-button-line {
+.navButton-line {
   position: relative;
   display: block;
   height: 2px;
@@ -48,55 +44,59 @@ h1 {
   transition: ease .5s;
 }
 
-.menu-button-line:nth-child(1) { top: 0; }
-.menu-button-line:nth-child(2) { margin: 8px 0; }
-.menu-button-line:nth-child(3) { top: 0; }
+.navButton-line:nth-child(1) { top: 0; }
+.navButton-line:nth-child(2) { margin: 8px 0; }
+.navButton-line:nth-child(3) { top: 0; }
 
-.menu-button.isOpen .menu-button-line:nth-child(1) {
+.navButton.isOpen .navButton-line:nth-child(1) {
   top: 10px;
   transform: rotate(135deg);
 }
 
-.menu-button.isOpen .menu-button-line:nth-child(2) {
+.navButton.isOpen .navButton-line:nth-child(2) {
   transform: translateY(-50%);
   opacity: 0;
 }
 
-.menu-button.isOpen .menu-button-line:nth-child(3) {
+.navButton.isOpen .navButton-line:nth-child(3) {
   top: -10px;
   transform: rotate(-135deg);
 }
 
-.menu-list {
+nav{
+  position: relative;
+}
+
+.menu {
   position: absolute;
-  top: 6rem;
+  top: 0;
   left: 0;
   width: 100%;
   background-color: rgba(64,64,64,.7);
   box-shadow: 0 4px 0.3125rem rgba(0,0,0,.3);
 }
 
-.menu-list li {
+.menu li {
   height: 3rem;
   border-bottom: solid 1px #AAA;
 }
 
-.menu-list a {
+.menu a {
   display: block;
   padding: 0.75rem;
   text-align: center;
   color: #FFF;
 }
 
-.menu-list a:hover {
+.menu a:hover {
   background-color: #333;
 }
 
-main {
+article {
   padding: 3rem;
 }
 
-main p {
+article p {
   text-align: justify;
   color: #555;
 }
