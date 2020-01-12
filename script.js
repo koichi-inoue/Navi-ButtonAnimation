@@ -1,10 +1,10 @@
 $(function(){
 
-  $(".menu-list").hide();
+  $(".menu").hide();
 
-  $(".menu-button").click( function(){
-    $(".menu-button").toggleClass('isOpen');
-    $(".menu-list").slideToggle();
+  $(".navButton").click( function(){
+    $(".navButton").toggleClass('isOpen');
+    $(".menu").slideToggle();
   });
 
 });
